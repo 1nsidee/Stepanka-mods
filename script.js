@@ -8,7 +8,7 @@ window.onload = function(){
         document.querySelector('.date').innerHTML = str;
     }
 setInterval(showDate,1000);
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1Wr8QyZhfCbVnRL4I_VRWEViNytulCC84Ta3erGWeOqE/od6/public/values?alt=json",
+    $.getJSON("https://spreadsheets.google.com/feeds/list/1BKbSY0VaA6Uxc56IN8neimqPlJiFaB8v3FgvA8Hssao/od6/public/values?alt=json",
         function (data) {
             console.log(data);
             data = data['feed']['entry'];
